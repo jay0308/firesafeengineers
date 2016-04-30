@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://mythemepreviews.com/uno_personal/video/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+<!-- Meta Tag for responsive -->
+<meta name="”viewport”" content="”width=1024," minimal-ui”="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+<title>Fire Safe Engineers </title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />`
+    
+<!-- Loading of stylesheet for the design -->
+<link href="./UNO - A Powerful Personal Portfolio and Resume Page_files/main.css" rel="stylesheet" type="text/css">
+    
+<!-- This tells the page to watch for special styling for IE9 -->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+
+<!-- Important external stylesheets -->
+<link rel="stylesheet" href="./UNO - A Powerful Personal Portfolio and Resume Page_files/owl.carousel.css">
+<link rel="stylesheet" href="./UNO - A Powerful Personal Portfolio and Resume Page_files/owl.theme.css">
+<link rel="stylesheet" href="./UNO - A Powerful Personal Portfolio and Resume Page_files/fontello.css">
+<link rel="stylesheet" href="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.fancybox.css" type="text/css" media="screen"> 
+<link rel="stylesheet" href="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.fs.wallpaper.css" type="text/css" media="all">
+<link rel="stylesheet" href="./UNO - A Powerful Personal Portfolio and Resume Page_files/animate.css">
+
+<!-- Finally we will load the font from Google Fonts -->
+<link href="./UNO - A Powerful Personal Portfolio and Resume Page_files/css" rel="stylesheet" type="text/css">
+
+<!-- <script type="text/javascript" src="UNO - A Powerful Personal Portfolio and Resume Page_files/js1.js"></script>
+<script type="text/javascript" src="UNO - A Powerful Personal Portfolio and Resume Page_files/js2.js"></script> -->
+
+    
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//scroll-image
+	  $(function(){
+        var scroller = $('#scroller div.innerScrollArea');
+        var scrollerContent = scroller.children('ul');
+        scrollerContent.children().clone().appendTo(scrollerContent);
+        var curX = 0;
+        scrollerContent.children().each(function(){
+            var $this = $(this);
+            $this.css('left', curX);
+            curX += $this.outerWidth(true);
+        });
+        var fullW = curX / 2;
+        var viewportW = scroller.width();
+
+        // Scrolling speed management
+        var controller = {curSpeed:0, fullSpeed:2};
+        var $controller = $(controller);
+        var tweenToNewSpeed = function(newSpeed, duration)
+        {
+            if (duration === undefined)
+                duration = 600;
+            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+        };
+
+        // Pause on hover
+        scroller.hover(function(){
+            tweenToNewSpeed(0);
+        }, function(){
+            tweenToNewSpeed(controller.fullSpeed);
+        });
+
+        // Scrolling management; start the automatical scrolling
+        var doScroll = function()
+        {
+            var curX = scroller.scrollLeft();
+            var newX = curX + controller.curSpeed;
+            if (newX > fullW*2 - viewportW)
+                newX -= fullW;
+            scroller.scrollLeft(newX);
+        };
+        setInterval(doScroll, 20);
+        tweenToNewSpeed(controller.fullSpeed);
+    });
+//end of scroll-image
+  $(window).load(function() {           
+  var i =0; 
+  var images = ['images2.jpg','images3.jpg','images1.jpg'];
+  var image = $('#slideit');
+                //Initial Background image setup
+  image.css('background-image', 'url(images1.jpg)');
+                //Change image at regular intervals
+  setInterval(function(){   
+   image.fadeOut(1000, function () {
+   image.css('background-image', 'url(' + images [i++] +')');
+   image.fadeIn(1000);
+   });
+   if(i == images.length)
+    i = 0;
+  }, 5000);            
+ });
+
+
+</script>
+</head>
+
+<body id="top" class="wallpaper-inititalized">
+
+<!-- Start of Social Section at bottom of page --> 
+<div id="socialsection" class="" style="height: 40px; opacity: 0;">
+
+    <!-- You MUST add the URL's for your account at each social network in the code below to swap out the hash # tag -->
+    <div id="social-left">
+        <div style="margin-left:30%">
+        <div class="mylogo">
+        <a href=""><i><img src="fb.png"></i></a></div>
+        <div class="mylogo"><a href=""><i><img src="twit.png"></i></a></div>
+        <div class="mylogo"><a href=""><i><img src="ln.png"></i></a></div>
+        <div class="mylogo"><a href=""><i><img src="g.png"></i></a></div>
+        </div>
+    </div>
+    
+    <div id="social-button"></div>
+    
+    <!-- You MUST change the URL definition in these links to share YOUR page - simply change the URL -->
+    <div id="social-right">
+   <div style="margin-left:30%">
+        <div class="mylogo">
+        <a href=""><i><img src="fb.png"></i></a></div>
+        <div class="mylogo"><a href=""><i><img src="twit.png"></i></a></div>
+        <div class="mylogo"><a href=""><i><img src="ln.png"></i></a></div>
+        <div class="mylogo"><a href=""><i><img src="g.png"></i></a></div>
+        </div>
+    </div>
+    
+</div><!-- End of Social Section at bottom of page -->     
+    
+        
+
+<!-- HEADER SECTION -->
+<header>
+
+    <!-- Start of Header Container - the content div that is a set width and centralized -->
+    <div class="header-container">
+        
+        <div id="menu" class="menu">
+            <div id="nav" class="nav" style="display: none;">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#fireSaftey">Our Projects</a></li>
+                    <li><a href="#services"> Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#client">Clients</a></li>
+                    <!-- <li><a href="http://mythemepreviews.com/uno_personal/video/#Portfolio">Portfolio</a></li> -->
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="menu-button"></div> 
+        </div>        
+
+    </div><!-- End of Header Container -->
+    
+
+</header>
+    
+    
+<!-- TOP SECTION -->
+
+<!-- Start of Video Element -->
+<div id="slideit" class="wallpaper video_element">
+
+    <!-- Start of Main Title + Intro -->
+    <div class="huge-title" style="opacity: 1;">
+
+        <img src="fs.png" alt="FIRESAFE ENGINEERS" class="headshot wow tada animated" data-wow-delay="3s" data-wow-offset="80" data-wow-duration="1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 3s; -moz-animation-delay: 3s; animation-delay: 3s;">
+        <h1 class="wow bounceInDown animated" data-wow-offset="80" data-wow-duration="3s" style="visibility: visible;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;">Firesafe Engineers</h1>
+
+        <!-- Start of Owl Testimonial Carousel -->
+        <div class="testimonials owl-carousel owl-theme" style="display: block; opacity: 1;">
+
+            <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 7284px; left: 0px; display: block; transition: all 200ms ease; transform: translate3d(-2428px, 0px, 0px);"><div class="owl-item" style="width: 1214px;"><div><!-- Start of Slide 1 -->
+                <div class="button-box"><h4>working towards a safer society</h4></div>
+            </div></div><div class="owl-item" style="width: 1214px;"><div><!-- Start of Slide 2 -->
+                <div class="button-box"><h4></h4></div>
+            </div></div><div class="owl-item" style="width: 1214px;"><div><!-- Start of Slide 3 -->
+                <div class="button-box"><h4></h4></div>
+            </div></div></div></div>
+
+            
+
+            
+
+        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div><!-- End of Owl Testimonial Carousel -->
+
+    </div><!-- End of Main Title + Intro -->
+
+    <!-- Start of Scroll Down Message and animation -->
+    <div id="godown" class="floating" style="opacity: 1;">
+
+        <p><a href="#aboutUs">Learn more about firesafe engineers</a></p>
+        <img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/godown.png" alt="down">
+
+    </div><!-- End of Scroll Down Message and animation -->
+
+    <!-- Start of Shade - this is the css based gradient over the image for that cool effect -->
+    <div class="shade"></div><!-- End of Shade -->
+
+    <!-- Start of Background - displays a static image in replacement of video when on tablets and mobile devices -->
+    <div class="background" id="slideit"></div><!-- End of Background -->
+
+<div class="wallpaper-container"><div class="wallpaper-media wallpaper-video" style="opacity: 1; height: 758.813px; width: 1349px; left: 0px; top: -79.9063px;"><video loop=""><source src="videos/clouds2.webm" type="video/webm"><source src="videos/clouds2.mp4" type="video/mp4"><source src="videos/clouds2.ogv" type="video/ogg"></video></div></div></div><!-- End of Video Element -->
+
+
+
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+
+    <!-- Start of Container -->
+    <div class="container">
+        
+        
+        
+        <!-- AT A GLANCE SECTION -->
+            
+        <!-- Start of Content - where the content be -->
+        <div class="content2">
+        
+            <!-- Start of Hero - The main top image like a phone etc -->
+            <div class="hero">
+                
+                <h3 style="font-size:32px;">At a glance</h3>
+                
+                <div class="one_third wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;">
+                        <h4>FOUNDER/CEO</h4>
+                            <h5>Naushad Ahmed</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+                        <h4>REACH HERE</h4>
+                            <h5>Julena, New Delhi-110025</h5>
+                </div>
+                
+                <div class="one_third_last wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+                        <h4>ESTABLISHED IN</h4>
+                            <h5>1990</h5>
+                </div>
+                       
+            </div><!-- End of Hero -->
+            
+        </div><!-- End of Content -->
+        
+        
+        
+        <!-- ABOUT SECTION -->    
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+            
+            <!-- Start of Content -->
+            <div class="content" id="About">
+                  <a name="aboutUs"></a>   
+                <h2 class="border wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">About us</h2>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third clearfix wow fadeInUp animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                    <h2>A Message from the MD</h2>
+                </div><!-- End of 1/3 Column
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                    <!-- <h3>Master Of The Universe</h3>
+                    <h5>University Of Life</h5>
+                    <p class="small">3 Years</p>
+                    <div class="date">June 2010 - May 2013</div> -->
+                    <p>Dear Visitor,<br>
+Welcome to the website of Firesafe Engineers and thank you for your interest. This site will give you an excellent insight about our company and its capabilities.
+Only a click away, you will find a lot of useful information about the different products and services that we provide.
+The mission of Firesafe Engineers  is Keeping you safe and your property secure .
+We did grow steadily since inception and have now been recognized as the unparalleled leader in fire safety industry.
+</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="bigspace"></div>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third wow fadeInUp animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                    <h2>Company Profile</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                    <p>Firesafe Engineers is a leading name in India dealing in Fire Fighting, Safety Equipments, Personal Protective Equipments, Burglar System, First Aid Kits and Glow Sign Boards. Firesafe Engineers is founded in 1990 and serving India’s top most organization in public and private sector. Fire safety refers to precautions that are taken to prevent or reduce the likelihood of a fire that may result in death, injury, or property damage, alert those in a structure to the presence of a fire in the event one occurs, better enable those threatened by a fire to survive, or to reduce the damage caused by a fire. We are providing fire safety equipments to Bharti Enterprises, Escorts, Aditya Birla Group, Jubilant, NTPC, IOCL, BEL etc. Our safety equipments and fire safe consultancy services are hugely appreciated by all of our clients. We also follow the world standard of safety equipments as per NFPA, IS, DGMS, CE, En. Decades of experience in fire safety industry make us leaders in India and the success to sustain our establishment and reputation made us the best. Safety, Quality and Reliability is our main prospect and object of business.</p>
+                   <!--  <h3>Front End Developer</h3>
+                    <h5>XYZ Company, Utah</h5>
+                    <p class="small">6 Months</p>
+                    <div class="date">June 2013 - Present</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p> -->
+
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- new row -->
+                 <div class="bigspace"></div>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third wow fadeInUp animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                    <h2>Our Values</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                    <div class="our-values">
+                        <img src="integrity.jpg">
+                        <p>Integrity</p>
+                    </div>
+                    <div class="our-values">
+                        <img src="customer.jpg">
+                        <p>Client Focus</p>
+                    </div>
+                    <div class="our-values">
+                        <img src="Quality.jpg">
+                        <p>Quality</p>
+                    </div>
+                    <div class="our-values">
+                        <img src="teamwork.jpg">
+                        <p>Team Work</p>
+                    </div>
+                    <div class="our-values">
+                        <img src="performance.jpg">
+                        <p>Performance</p>
+                    </div>
+                    <div class="our-values">
+                        <img src="respect-for-people.jpg">
+                        <p>Respect </p>
+                    </div>
+
+
+                </div>
+                <!-- end of new row -->
+            
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
+        
+        
+        
+        <!-- SKILLS SECTION -->
+        
+        <!-- Start of Parallax 1 Container -->
+        <div class="parallax1">
+
+            <!-- Start of Content -->
+            <div class="content" id="Skills">
+                <a name="services"></a> 
+                <h2 class="border wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">Our Services</h2>
+
+                <!-- Start of One Half Column Container -->
+                <div class="half_column1 wow fadeInLeftBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+
+                    <p>Firesafe Engineers provides fire safety solutions and equipments for business in India. We have unique combination of services allow our clients to create custom solutions designed to help protect their buildings, factories, equipment, properties and people on the job, out in the field and around the clock. Where safety is paramount, major industrial and commercial facilities in India relay upon Firesafe Engineers.</p>
+                    <div class="button-box"><a href="#contactUs" class="button">Contact Us</a></div>
+
+                </div><!-- End of One Half Column Container -->
+
+                <!-- Start of One Half Column Last Container -->
+                <div class="half_column2 wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+
+                    <!-- Start of 3 rows -->
+                    <div class="one_third_new centered skill">
+                        <div class="our-service-round ">
+							<img src="s1.jpg">
+						</div>
+        
+                        <h3>Maintenance of Fire Protection System</h3>
+                    </div>
+
+                    <div class="one_third_new centered skill">
+                        <div class="our-service-round ">
+							<img src="s2.jpg">
+						</div>
+                        <h3>Fire Safety Audits & Training</h3>
+                    </div>
+                    
+                    <div class="one_third_new centered skill">
+                        <div class="our-service-round ">
+							<img src="s3.jpg">
+						</div>
+                        <h3>FPS Design Specification & Installation</h3>
+                    </div>
+
+                    <!-- End of 3 rows -->
+
+
+                </div><!-- End of One Half Column Last Container -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Parallax 1 Container -->
+        
+
+        
+        <!-- CV / RESUME SECTION -->
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+        <a name="fireSaftey"></a> 
+            <!-- Start of Content -->
+            <div class="content" id="CV">
+
+                <h2 class="border wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">Our Projects</h2>
+            
+                <!-- first row -->
+                   
+                    <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="proj1.jpg" alt="Portfolio 5"></div></a>
+                            <h5>India Habitat Center</h5>
+                          
+                        </div>
+                    </div>
+
+                     <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="proj2.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Alshifa Hospital</h5>
+                            
+                        </div>
+                    </div> <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="proj3.jpg" alt="Portfolio 5"></div></a>
+                            <h5>JP Hospital</h5>
+                            
+                        </div>
+                    </div> <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="proj4.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Orient Craft</h5>
+                          
+                        </div>
+                    </div>
+                <!-- end of first row -->
+
+                <!-- start of 2nd row -->
+
+                    <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="proj5.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Qutub Merchantile</h5>
+                           
+                        </div>
+                    </div>
+
+                     <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="1.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Water Based Fire Fighting System</h5>
+                            <p>Caption styling is also included and styled for <a href="">links also</a></p>
+                        </div>
+                    </div> <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="1.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Water Based Fire Fighting System</h5>
+                            <p>Caption styling is also included and styled for <a href="">links also</a></p>
+                        </div>
+                    </div> <div class="one_third_project wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                          <div class="eye"><img src="1.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Water Based Fire Fighting System</h5>
+                            <p>Caption styling is also included and styled for <a href="">links also</a></p>
+                        </div>
+                    </div>
+                <!-- end of 2nd row -->
+               
+
+            
+        </div><!-- End of White Container -->
+        
+
+        
+        <!-- TESTIMONIALS SECTION -->
+        
+        <!-- Start of Parallax 2 Container -->
+        <div class="parallax2">
+        
+                <!-- Start of Content -->
+                <div class="content shadow" id="Testimonials">
+                    
+                	<h2 class="border wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">Client Reviews</h2>
+
+                        <div class="client-review">
+                            <p>Extraordinary level of support and advice in assisting us to ensure that our properties are compliant with all aspects of fire safety<br><br><br><br></p>
+                            <p style="text-align:right">Shama Afreen</p>
+                        </div>
+                        <div class="client-review">
+                            <p>I have been using FireSafeEngineers’s Products from some time now and I have always found them to be very professional. I would highly recommend FireSafeEngineers’s Products and Services.”</p>
+                            <p style="text-align:right">Ar. Nisar Ahmed</p>
+                        </div>
+                        <div class="client-review">
+                            <p>Firesafe Engineers provide professional, efficient and expert advice, together with an exceptional high standard of customer service. I would have no hesitation in recommending their services to any company.”</p>
+                            <p style="text-align:right">Sandeep Sharma</p>
+                        </div>
+                                
+                    
+				</div><!-- End of Content -->
+            
+        </div><!-- End of Parallax 2 Container -->
+        
+        
+        
+        <!-- CLIENTS SECTION -->
+        
+        <!-- Start of Grey Container -->
+        <div class="greycontainer">
+        <a name="client"></a> 
+                <!-- Start of Content -->
+                <div class="content" id="Clients">
+                    
+                    <h2 class="border wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">Clients</h2>
+                    <p>The fully responsive <a href="">Owl Carousel</a> is also touch enabled for devices such as smart phones and tablets. The carousel will accept any content such as images, styled divs, text blocks or anything else you can create.</p>
+                    <!-- <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> -->
+				<div id="scroller" style="width: 950px; height: 260px; margin: 0 auto;">
+					<div class="innerScrollArea">
+						 <ul>
+						 <!-- Define photos here -->
+							<li><img src="client1.jpg" width="200" height="200" /></li>
+							<li><img src="client2.jpg" width="200" height="200" /></li>
+							<li><img src="client3.png" width="200" height="200" /></li>
+							 <li><img src="client4.jpg" width="200" height="200" /></li>
+							<li><img src="client5.png" width="200" height="200" /></li>
+						 </ul>
+					</div>
+				</div>
+                               
+                </div><!-- End of Content -->
+            
+        </div><!-- End of Grey Container -->
+        
+        
+        
+        <!-- Our products -->
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+            <a name="products"></a> 
+            <!-- Start of Content - where the content be -->
+            <div class="content" id="Portfolio">
+
+                <h2 class="border wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">Our Products</h2>
+                <p>
+Firesafe Engineers provides fire safety solutions and equipments for business in India. We have unique combination of products allow our clients to create custom solutions designed to help protect their buildings, factories, equipment, properties and people on the job, out in the field and around the clock. Where safety is paramount, major industrial and commercial facilities in India relay upon Firesafe Engineers.</p>
+
+                <div class="center-align">
+
+                    <!-- Start of 3 rows -->
+                    <div class="one_third wow fadeInLeftBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product1.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product1.jpg" alt="Portfolio 1"></div></a>
+                            <h5>Portable Fire Extinguishers</h5>
+                            <p>Firesafe Engineers is portable fire extinguisher supplier and portable fire extinguisher manufacturer in Delhi, India </p>
+                        </div>
+                    </div>
+
+                    <div class="one_third wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product2.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product2.jpg" alt="Portfolio 2"></div></a>
+                            <h5>Fire Detection Equipments And Alarms</h5>
+                            <p>Firesafe Engineers fire detection equipments and alarms are synonymous with quality. Since last some of years Firesafe Engineers has been manufacturing fire detection equipments and alarms in Delhi, India.</p>
+                        </div>
+                    </div>
+
+                    <div class="one_third_last wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product3.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product3.jpg" alt="Portfolio 3"></div></a>
+                            <h5>Fire Fighting and Fire Control Equipments</h5>
+                            <p>Firesafe Engineers is a leading manufacturer and supplier of all types of fire fighting and fire control equipments in Delhi, India. The company has a core aim of providing the most excellent range of fire fighting and fire control equipments in Delhi, India.</p>
+                        </div>
+                    </div><!-- End of 3 rows -->
+                    
+
+                    <!-- Start of 3 rows -->
+                    <div class="one_third wow fadeInLeftBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product8.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product8.jpg" alt="Portfolio 4"></div></a>
+                            <h5>Fire Fighting Safety Equipments & Accessories</h5>
+                            <p>We all will be very much agree in this point that the decision we make about fire safety and fire safety arrangements are more critical then ever. Firesafe Engineers is providing the best quality products in fire fighting safety equipments and accessories in Delhi, India. </p>
+                        </div>
+                    </div>
+
+                    <div class="one_third wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product4.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product4.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Water Based Fire Fighting System</h5>
+                            <p>Firesafe Engineers is the leading supplier of water based fire fighter system in Delhi, India. The water based fire fighting system is the important part of entire fire fighting system. It is the backbone of the entire fire fighting system.</p>
+                        </div>
+                    </div>
+                    <!-- new -->
+                    <div class="one_third wow fadeInLeftBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product5.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product5.jpg" alt="Portfolio 5"></div></a>
+                            <h5>Signages</h5>
+                            <p>Caption styling is also included and styled for <a href="">links also</a></p>
+                        </div>
+                    </div><div class="one_third wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product6.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product6.jpg" alt="Portfolio 5"></div></a>
+                            <h5>First Aid</h5>
+                            <p>Caption styling is also included and styled for <a href="">links also</a></p>
+                        </div>
+                    </div>
+
+                    <div class="one_third_last wow fadeInRightBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                        <div class="infopanel">
+                            <a href="./UNO - A Powerful Personal Portfolio and Resume Page_files/product7.jpg" class="fancybox" rel="group2"><div class="eye"><img src="./UNO - A Powerful Personal Portfolio and Resume Page_files/product7.jpg" alt="Portfolio 6"></div></a>
+                            <h5>Wind Sock</h5>
+                            <p>Caption styling is also included and styled for <a href="">links also</a></p></div>
+                        </div>
+                    </div><!-- End of 3 rows -->
+
+                </div>
+
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
+        
+        
+        
+        <!-- CONTACT FORM SECTION -->
+
+        <!-- Start of Grey Container -->
+        <div class="greycontainer" id="Contact">
+            <a name="contactUs"></a> 
+            <!-- Start of Content -->
+            <div class="content centered" id="Contact">
+
+                <h2>Contact Us</h2>
+                <p>Provided with the product is this fully functional contact PHP based form with inline validation and success message. Invalid entries / missing fields will display a notice next to the incomplete field. On success a user defined message is neatly displayed as the form 'rolls-up'. Completed entries are emailed directly to your desired email account. PHP Mail() Function must be active on your hosting server, but that's pretty standard!</p>
+
+                <!-- Begin Contact Form -->
+                <form action="MAILTO:md.sf.21@gmail.com" method="post" enctype="text/plain" id="contact_form" method="post" class="wow fadeInUpBig animated" data-wow-offset="80" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+
+                    <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" value="" class="requiredField name">
+                    </p>
+
+                    <p>
+                    <label>Email Address</label>				
+                    <input type="text" name="email" id="email" value="" class="requiredField email"> 
+                    </p>
+
+                    <label>Product</label>
+                    <select class="requiredField">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                </select>
+
+                    <p>
+                    <label>Your Message</label>
+                    <textarea name="message" id="message" rows="8" cols="30" class="requiredField message"></textarea>
+                    </p>
+
+                    <p><input name="submitted" id="submitted" value="Send" class="submit" type="submit"></p>
+
+                </form>  <!--End Contact Form -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Grey Container -->
+        
+
+      
+        <!-- FOOTER SECTION -->
+
+        <!-- Start Of Footer -->    
+         <footer>
+
+            <!-- Start of Content -->
+            <div class="content">
+
+                <p>167/7, United House, 
+<br>
+                Jullena Commercial Complex <br>
+                
+New Delhi-110025<br>
+                Contact No. : +91-981-088-2449<br>
+                <a href="mailto: jane@doe.com">firesafeengineers@gmail.com</a></p>
+
+                <p class="copyright">Copyright 2016 - firesafeengineers.com</p>
+
+            </div><!-- End of Content -->
+
+        </footer><!-- End Of Footer -->
+        
+	</div><!-- End of Container -->
+    
+</div><!-- End of Wrapper -->
+
+<!--Loading Scripts -->
+<!-- First we will load jQuery -->
+<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.min.js"></script>
+<!--Load Fallback if google not avalible-->
+<script>
+if (!window.jQuery) {
+    document.write('<script src="js/jquery-1.11.0.min.js"><\/script>');
+}
+</script>    
+<!-- Now we load the JS files for the fancy things on the page -->
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/owl.carousel.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.fitvids.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/retina.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.fs.wallpaper.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.plusanchor.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/jquery.knob.js"></script>
+<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/app.js"></script>
+<script type="text/javascript" src="./UNO - A Powerful Personal Portfolio and Resume Page_files/wow.min.js"></script>
+
+</body></html>
