@@ -680,7 +680,7 @@ h5 {
 }
 .our-values{
     width: 20%;
-    height: auto;
+    height: 200px;
     margin: 3.5%;
     border-radius: 2px;
     background-color: #792E28;
@@ -689,6 +689,7 @@ h5 {
     color: white;
     padding: 1%;
     text-align: center;
+    overflow: hidden;
 }
 .our-values:hover{
     background-color: black;
@@ -704,8 +705,10 @@ h5 {
     float: left;
     margin-bottom: 5%;
     width: 22%;
+    height:500px;
     margin-right: 3.5%;
     text-align: left;
+    overflow: hidden;
 }
 .one_third_new {
     float: left;
@@ -1234,6 +1237,12 @@ Responsive Styling
         font-size: 15px;
         letter-spacing: 1px;
         word-spacing: 2px;
+    }
+}
+@media all and (max-width:480px){
+    .our-values{
+        height:200px;
+        overflow: hidden;
     }
 }
 
