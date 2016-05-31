@@ -723,12 +723,24 @@ h5 {
     width: 20%;
     margin-right: 3.5%;
     text-align: left;
+    height: 200px;
+    overflow: hidden;
 }
 .one_third_last {
     float: right;
     margin-bottom: 5%;
     width: 22%;
+    height: 500px;
     text-align: left;
+    overflow: hidden;
+}
+.one_third_glance {
+
+    float: left;
+    margin-bottom: 5%;
+    width: 30%;
+    text-align: left;
+    
 }
 .two_third_last {
     float: right;
@@ -1053,6 +1065,36 @@ Menu Styling
     border-radius: 3px;
     transition: all 0.2s ease-in-out;
 }
+.add1{
+        width: 50%;
+        float: left;
+    }
+    .add1 h5{
+            font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 3em;
+    color: #ffffff;
+    opacity: 0.7;
+    display: block;
+    text-align: center;
+    }
+    .add2{
+        width: 50%;
+        float: right;
+    }
+    .add2 h5{
+            font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 3em;
+    color: #ffffff;
+    opacity: 0.7;
+    display: block;
+    text-align: center;
+    }
 .nav ul li a, .nav ul li a:hover { font-size: 14px; border-bottom: 0px solid transparent; }
 .nav ul li a:hover { color: #ffffff; border-top: 0px solid transparent; }
 .nav ul li:hover { background-color: #770202; }
@@ -1061,7 +1103,31 @@ Menu Styling
 Responsive Styling
 ==============================================
 */
+@media all and (max-width: 968px)
+{
+    .one_third_new{
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: -150px;
+        margin-left: 25%;
+
+    }
+     .client-review{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 3%;
+    padding: 1%;
+    float: left;
+    
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+}
+}
 @media all and (max-width: 1024px)  {
+     .aboutus-content{
+        height:100px;
+    }
     #socialsection { width: 90%; height: 40px; opacity: 0; left: 5%; bottom: -1px; position: fixed; z-index: 105; color: #ffffff; border-radius: 3px 3px 0 0; transition: all 0.3s ease-in-out;}
     .mobileSpace { visibility:visible; clear: both; height: 60px; }
     .content { width: 80%; }
@@ -1091,6 +1157,20 @@ Responsive Styling
     #contact_form { width: 100%; }
 }
 @media all and (max-width: 768px)  {
+     .aboutus-content{
+        height:100px;
+    }
+     .client-review{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 3%;
+    padding: 1%;
+    float: left;
+    
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+}
     #Skills .half_column1, #Skills .half_column2, #Contact .half_column1, #Contact .half_column2 { width: 100%; }
     #Skills .half_column2 { margin-top: 50px; }
     #Portfolio .one_third, #Portfolio .one_third_last { width: 100%; margin-right: 0; }
@@ -1103,6 +1183,8 @@ Responsive Styling
     width: 100%;
     margin-right: 0%;
     }
+
+
     .one_third_project {
     float: left;
     text-align: left;
@@ -1154,6 +1236,20 @@ Responsive Styling
     #mc_embed_signup input[type="submit"] {margin: 3% 0 0 3%; float: none; width: auto; }
 }
 @media all and (max-width: 640px) {
+      .aboutus-content{
+        height:100px;
+    }
+     .client-review{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 3%;
+    padding: 1%;
+    float: left;
+    
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+}
     p { font-size: 19px; }
     .half_column1 {
         float: left;
@@ -1187,7 +1283,23 @@ Responsive Styling
     .hero .one_third, .hero .one_third_last { width: 47%; }
 }
 @media all and (max-width: 568px) {
-
+     .aboutus-content{
+        height:100px;
+    }
+     .aboutus-content{
+        height:100px;
+    }
+     .client-review{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 3%;
+    padding: 1%;
+    float: left;
+    
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+}
     .one_third_last.skill, .one_third.skill {
     float: none;
     margin: 40px auto 0;
@@ -1232,22 +1344,73 @@ Responsive Styling
         margin-left: 25%;
 
     }
+    .one_third_glance {
+    float: left;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: left;
+    
+}
     .one_third_new h3{
         text-align: left;
         font-size: 15px;
         letter-spacing: 1px;
         word-spacing: 2px;
     }
+    .add1{
+        width: 100%;
+    }
+    .add2{
+        width: 100%;
+    }
 }
 @media all and (max-width:480px){
+     .aboutus-content{
+        height:100px;
+    }
     .our-values{
         height:200px;
         overflow: hidden;
     }
+    .one_third_glance {
+    float: left;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: left;
+    
+}
+     .client-review{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 3%;
+    padding: 1%;
+    float: left;
+    
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
+    opacity: 0.4;
+}
+.add1{
+        width: 100%;
+    }
+    .add2{
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 360px) {
+    .add1{
+        width: 100%;
+        display: block;
+    }
+    .add2{
+        width: 100%;
+        display: block;
+    }
     
+    .aboutus-content{
+        height:100px;
+    }
     .our-values{
     width: 100%;
     height: auto;
@@ -1266,8 +1429,16 @@ Responsive Styling
     margin: 3%;
     padding: 1%;
     float: left;
+    
     box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
     opacity: 0.4;
+}
+.one_third_glance {
+    float: left;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: left;
+    
 }
     .one_third_project {
     float: left;
@@ -1361,3 +1532,4 @@ Responsive Styling
         position: absolute;
     }
 	
+    
